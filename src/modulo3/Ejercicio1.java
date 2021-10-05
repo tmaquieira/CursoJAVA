@@ -7,12 +7,12 @@ public class Ejercicio1 {
 		
 		byte nota1 = 7;
 		byte nota2 = 8;
-		byte nota3 = 4;
+		byte nota3 = 3;
 				
 		if (((nota1+nota2+nota3)/3) >= 7) {
-			System.out.println("aprobado"); 
+			System.out.println("Aprobado"); 
 		}else {
-			System.out.println("reprobado");
+			System.out.println("Reprobado");
 		}
 	}
 
