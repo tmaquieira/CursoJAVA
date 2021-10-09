@@ -4,9 +4,9 @@ public class Ejercicio3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		char division = 'a'; //char solo admite comilla simple
-		byte cantidadGoles = 12; //seria short si hay que sumar todos los goles de messi
-		int capacidadCancha = 12;
-		byte promedioGoles = 12; //seria short si hay que sumar todos los goles de messi
+		short cantidadGoles = 129; //seria short si hay que sumar todos los goles de messi
+		int capacidadCancha = 12000;
+		byte promedioGoles = 12; //seria byte si hay que sumar todos los goles de messi
 
 		System.out.println("Dato\t\t\t\tValor");
 		System.out.println("....\t\t\t\t......");
