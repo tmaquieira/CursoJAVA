@@ -20,7 +20,14 @@ public class Ejercicio2noEntiendoLoDeALGORITMO {
 		}
 		}
 		System.out.println("La suma de todos los múltiplos pares es: "+suma);
-	//no entiendo cómo realizarlo "con un algoritmo".
-	//cómo sentenciar el boolean correctamente en el sysout?
-	}
+		}
 }
+
+/*
+//con Algoritmo:
+		for(int i=0; i<11; i++) {
+		suma = suma + (base*i); //primero sumame todo; 2x1, 2x2, 2x3...
+		suma = suma - (((i%2)*i)*base); //después restame solo los impares.
+//resultado del módulo (1 o 0) x multiplicador (1,2,3...) x multiplicado (número ingresado por el usuario)
+		}
+ */
