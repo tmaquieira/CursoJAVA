@@ -2,7 +2,7 @@ package modulo4;
 
 import java.util.Scanner;
 
-public class Ejercicio2noEntiendoLoDeALGORITMO {
+public class Ejercicio2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

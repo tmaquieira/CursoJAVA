@@ -18,7 +18,7 @@ cuando el resultado este dentro de los correctos.
 		System.out.println("Ingrese su antiguedad...");
 		int antiguedad = sc.nextInt();
 		System.out.println("Ingrese su sueldo...");
-		double sueldoB = sc.nextLong();
+		double sueldoB = sc.nextDouble();
 		double numAnt = 0.00;
 		double numCat = 0.00;
 
