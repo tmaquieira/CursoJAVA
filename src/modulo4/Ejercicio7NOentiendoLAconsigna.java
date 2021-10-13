@@ -43,10 +43,7 @@ public class Ejercicio7NOentiendoLAconsigna {
 			//el break es para frenar la repetición. 
 			//el Math.round para mostrar solo 2 decimales.
 			}
-			
 		}
-
-		
 	}
 }
 
