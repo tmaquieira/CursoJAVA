@@ -37,6 +37,5 @@ public class PracticaEnClase {
 		for (int i=0; i<textoOriginal.length(); i++) {
 			System.out.println("Posición "+i+" char= "+textoOriginal.charAt(i));
 		}
-		
 	}
 }

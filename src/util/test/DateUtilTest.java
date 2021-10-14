@@ -1,6 +1,5 @@
 package util.test;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*; 
 import java.util.Calendar;
 import java.util.Date;
 import org.junit.jupiter.api.AfterEach;
@@ -14,6 +13,7 @@ class DateUtilTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		//se ejecuta antes de cada prueba
+		//creo mi lote de prueba 
 		Calendar cal = Calendar.getInstance();
 		cal.set(1989, Calendar.JANUARY, 29);
 		fechaCumple = cal.getTime();
@@ -28,6 +28,9 @@ class DateUtilTest {
 	@Test
 	void test() {
 		assertEquals(1989, DateUtil.getAnio(fechaCumple));
+		//como completar la prueba de MES? 
+		//	assertEquals(??Calendar.JANUARY??, DateUtil.getMes(fechaCumple));
+		assertEquals(29, DateUtil.getDia(fechaCumple));
 		//fail("Not yet implemented");
 	}
 
