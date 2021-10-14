@@ -19,3 +19,15 @@ public class Ejercicio11 {
 		}
 	}
 }
+
+/*CON STRING: 
+		System.out.println("Ingrese su letra...");
+		Scanner sc= new Scanner(System.in);
+		String letra = sc.next();
+
+		if (letra.equals("a") || letra.equals("e") || letra.equals("i") || letra.equals("o") || letra.equals("u")) {
+			System.out.println("Es una vocal");
+		}else {
+			System.out.println("No es una vocal");
+		}
+ */
