@@ -24,7 +24,7 @@ public class DateUtil {
 	public static int getMes(Date paramFecha) {
 		Calendar cal = Calendar.getInstance();//factory, singleton
 		cal.setTime(paramFecha);
-		return cal.get(Calendar.MONTH);
+		return cal.get(Calendar.MONTH)+1;
 	}
 	
 	public static int getDia(Date paramFecha) {
@@ -44,15 +44,24 @@ public class DateUtil {
 			return false;
 		}		
 	}
+	/*OTRA FORMA:
+	 public static boolean esFinde (Date fecha) {
 	
+	Calendar cal = Calendar.getInstance();
+	boolean es = false;
+	cal.setTime(fecha);
+	 if (cal.get(Calendar.DAY_OF_WEEK) > 5) es = true;
+	 return es;
+	}
+*/
 	public static boolean isDiaDeSemana(Date paramFecha) {
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(paramFecha);
 		if ((cal.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY) || (cal.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY)) { 
-			System.out.println("No es finde");
+			System.out.println("No es día lubural");
 			return false;
 		} else {
-			System.out.println("Es finde");
+			System.out.println("Es día lubural");
 			return true;  
 		}	
 	}

@@ -28,9 +28,13 @@ class DateUtilTest {
 	@Test
 	void test() {
 		assertEquals(1989, DateUtil.getAnio(fechaCumple));
-		//como completar la prueba de MES? 
-		//	assertEquals(??Calendar.JANUARY??, DateUtil.getMes(fechaCumple));
+		assertEquals(1, DateUtil.getMes(fechaCumple));
 		assertEquals(29, DateUtil.getDia(fechaCumple));
+		assertEquals(true, DateUtil.isFinDeSemana(fechaCumple));
+		assertEquals(false, DateUtil.isDiaDeSemana(fechaCumple));
+		assertEquals(Calendar.SUNDAY, DateUtil.getDiaDeSemana(fechaCumple));
+
+
 		//fail("Not yet implemented");
 	}
 
