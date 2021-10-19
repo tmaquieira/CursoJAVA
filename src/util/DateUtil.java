@@ -77,6 +77,20 @@ public class DateUtil {
 		String paramFecha = "31-08-1982 10:20:56";
 		Date date = sdf.parse(fecha);
 		System.out.println(date); //Tue Aug 31 10:20:56 SGT 1982*/
+	
+	  /*18/10:
+		if(strPattern.equals("dd-MM-YYYY"){
+		  int dia = Integer.parseInt(strFecha.subString(0,2));
+		  int mes = Integer.parseInt(strFecha.subString(3,5));
+		  int anio = Integer.parseInt(strFecha.subString(7));
+		  Calendar cal = Calendar.getInstance();
+		  cal.set(dia, mes-1, anio);
+		  Date result = cal.getTime();
+		} else if (strPattern.equals("MM-dd-YYYY"){
+		}
+		return result;
+	  */
+		
 		return null;		
 	}
 
