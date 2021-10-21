@@ -16,12 +16,15 @@ import org.junit.Test;
 public class PersonaTest {
 
 	List<Persona> listaPersonas;
+	Persona persona1;
+	Alumno alumno1;
+	Profesor profesor1;
 
 	@Before
 	public void setUp() throws Exception {
-		Persona persona1 = new Persona("Tatiana", "Maquieira");
-		Alumno alumno1 = new Alumno ("Federico", "Valledor", 37844826);
-		Profesor profesor1 = new Profesor("Gabriel", "Casas", "Programacion1");
+		persona1 = new Persona("Tatiana", "Maquieira");
+		alumno1 = new Alumno ("Federico", "Valledor", 37844826);
+		profesor1 = new Profesor("Gabriel", "Casas", "Programacion1");
 		listaPersonas = new ArrayList<>();
 		listaPersonas.add(new Alumno("Tati", "Maqui", 1));
 		listaPersonas.add(new Alumno("Joaco", "Corre", 2));
@@ -41,11 +44,10 @@ public class PersonaTest {
 
 	@Test
 	public void testHashCode() {
-		assertEquals("Maqui", Persona.getApellido()); //me pide que vuelva los métodos y atributos estáticos
-		assertEquals("Tati", Persona.getNombre());
-		assertEquals("Yami", Alumno.getNombre());
-		assertEquals("Leiva", Alumno.getApellido());
-		assertEquals(4, Alumno.getLegajo());
+		assertEquals("Maqui", persona1.getApellido()); 
+		assertEquals("Tati", persona1.getNombre());
+		assertEquals("Leiva", alumno1.getApellido());
+		assertEquals(4, alumno1.getLegajo());
 	}
 	
 	@Test

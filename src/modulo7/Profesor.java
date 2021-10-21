@@ -31,7 +31,9 @@ public class Profesor extends Persona {
 		return this.hashCode();
 	}
 	public String toString(){
-		return getNombre()+" "+getApellido()+" "+iosfa;  
-		//return this.toString();
+		StringBuilder sb = new StringBuilder();
+		sb.append(", iosfa = ");
+		sb.append(iosfa);
+		return getNombre()+" "+getApellido()+sb.toString();
 	}
 }

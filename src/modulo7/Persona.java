@@ -37,6 +37,7 @@ public class Persona {
 		return this.hashCode();
 	}
 	public String toString(){
-		  return nombre+" "+apellido;  
+		StringBuilder sb = new StringBuilder();
+		return sb.toString();	
 	}
 }

@@ -9,7 +9,6 @@ public class Alumno extends Persona {
 	public Alumno(){ 
 		super(); 
 	}
-		
 	public Alumno (String unNombre, String unApellido, int unLegajo){
 		super(unNombre, unApellido);
 		legajo = unLegajo;
@@ -27,13 +26,23 @@ public class Alumno extends Persona {
 	
 	//métodos
 	public boolean equals(Object alumno){
-		return false;
-	}
+			boolean bln=false;
+			if(alumno instanceof Alumno){
+				Alumno al = (Alumno) alumno;
+				bln = super.equals(al) && alumno instanceof Alumno && ((Alumno) alumno).getLegajo() == legajo;
+			}
+			return bln;
+		} 
+	
 	public int hashCode(){
-		return this.hashCode();
+		return super.hashCode() + (int) legajo;
+		//return this.hashCode();
 	}
 	public String toString(){
-	  return getNombre()+" "+getApellido()+" "+legajo;  
+		StringBuilder sb = new StringBuilder();
+		sb.append(", legajo Nro. = ");
+		sb.append(legajo);
+		return getNombre()+" "+getApellido()+sb.toString();
 	}
 }
 		
