@@ -1,5 +1,6 @@
 package util;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -64,6 +65,12 @@ public class DateUtil {
 			System.out.println("Es día lubural");
 			return true;  
 		}	
+		//también se puede devolver el valor del boolean directamente en el return: 
+		/*
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(paramFecha);
+		return (cal.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY || (cal.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY) 
+		 */
 	}
 	
 	public static int getDiaDeSemana(Date paramFecha) {
@@ -73,35 +80,42 @@ public class DateUtil {
 	}
 	
 	public static Date asDate(String pattern, String fecha) {
-	/*	SimpleDateFormat sdf = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
+		int dia;
+		int mes;
+		int anio;
+		Calendar cal = Calendar.getInstance();
+
+		if(pattern.equals("dd-MM-YYYY")){
+		  dia = Integer.parseInt(fecha.substring(0,2));
+		  mes = Integer.parseInt(fecha.substring(3,5));
+		  anio = Integer.parseInt(fecha.substring(7));
+		  cal.set(dia, mes-1, anio);
+		
+		} else if (pattern.equals("MM-dd-YYYY")){
+			mes = Integer.parseInt(fecha.substring(0,2));
+			dia = Integer.parseInt(fecha.substring(3,5));
+			anio = Integer.parseInt(fecha.substring(7));
+			cal.set(mes-1, dia, anio);
+		
+		}
+		  Date result = cal.getTime();
+		  return result;
+		/*	SACADO DE NTERNET: SimpleDateFormat sdf = new SimpleDateFormat("dd-M-yyyy hh:mm:ss");
 		String paramFecha = "31-08-1982 10:20:56";
 		Date date = sdf.parse(fecha);
-		System.out.println(date); //Tue Aug 31 10:20:56 SGT 1982*/
-	
-	  /*18/10:
-		if(strPattern.equals("dd-MM-YYYY"){
-		  int dia = Integer.parseInt(strFecha.subString(0,2));
-		  int mes = Integer.parseInt(strFecha.subString(3,5));
-		  int anio = Integer.parseInt(strFecha.subString(7));
-		  Calendar cal = Calendar.getInstance();
-		  cal.set(dia, mes-1, anio);
-		  Date result = cal.getTime();
-		} else if (strPattern.equals("MM-dd-YYYY"){
-		}
-		return result;
-	  */
-		
-		return null;		
+		System.out.println(date); //Tue Aug 31 10:20:56 SGT 1982
+		return null;*/	
 	}
 
 	public static Calendar asCalendar(String pattern, String fecha) {
-		Calendar cal = Calendar.getInstance();
-		/*SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
-		cal.setTime(sdf.parse("Mon Mar 14 16:02:37 GMT 2011"));// all done*/
 		return null;
 	}
 	
 	public static String asString(String pattern, Date fecha) {
-		return pattern;	
+		fecha = Calendar.getInstance().getTime();  
+		DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy hh:mm:ss");  
+		pattern = dateFormat.format(fecha);  
+		return "Convertido a String: "+pattern;	
+		//No se vio en clase. Sacado de https://www.javatpoint.com/java-date-to-string
 	}	
 }
