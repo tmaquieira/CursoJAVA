@@ -25,24 +25,24 @@ public class Alumno extends Persona {
 	}
 	
 	//métodos
-	public boolean equals(Object alumno){
-			boolean bln=false;
-			if(alumno instanceof Alumno){
-				Alumno al = (Alumno) alumno;
-				bln = super.equals(al) && alumno instanceof Alumno && ((Alumno) alumno).getLegajo() == legajo;
-			}
-			return bln;
-		} 
+	public boolean equals(Object obj){
+		boolean bln=false;
+		if(obj instanceof Alumno){
+			Alumno alu = (Alumno) obj;
+			bln = super.equals(alu) && obj instanceof Alumno && ((Alumno) obj).getLegajo() == legajo;
+		}
+		return bln;
+	} 
 	
 	public int hashCode(){
 		return super.hashCode() + (int) legajo;
-		//return this.hashCode();
 	}
+	
 	public String toString(){
-		StringBuilder sb = new StringBuilder();
-		sb.append(", legajo Nro. = ");
+		StringBuilder sb = new StringBuilder(super.toString());
+		sb.append(", Legajo Nro. = ");
 		sb.append(legajo);
-		return getNombre()+" "+getApellido()+sb.toString();
+		return sb.toString();
 	}
 }
 		

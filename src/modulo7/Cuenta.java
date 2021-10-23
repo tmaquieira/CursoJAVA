@@ -6,8 +6,7 @@ public abstract class Cuenta {
 	private int numero;
 	protected float saldo; //atributo visible para las clases que heredan de Cuenta
 	
-	//constructores
-	//primer método que se ejecuta al crear un objeto
+	//constructores - primer método que se ejecuta al crear un objeto
 	public Cuenta() {
 		cantidadDeCuentas++;
 	}
@@ -17,7 +16,6 @@ public abstract class Cuenta {
 		numero = pNum;
 		saldo = pSaldo;
 	}
-	
 	//accessors
 	public void setNumero(int pNum) {
 		numero=pNum;
