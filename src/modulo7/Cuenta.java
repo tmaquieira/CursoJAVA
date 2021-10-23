@@ -32,4 +32,25 @@ public abstract class Cuenta {
 	
 	public abstract void debitar(float pMonto);
 
+	public boolean equals(Object obj) {
+		boolean bln = false; 
+		if (obj instanceof Cuenta) {
+			//downCast 
+			Cuenta cue = (Cuenta) obj;	
+			bln = numero == cue.getNumero() && saldo == cue.getSaldo();
+		}
+		return bln;
+	}
+	
+	public int hashCode() {
+		return numero+(int)saldo;
+	}
+	
+	public String toString() {
+		StringBuilder sb = new StringBuilder("\nnumero = ");
+		sb.append(numero);
+		sb.append(", saldo = ");
+		sb.append(saldo);
+		return sb.toString();
+	}
 }
