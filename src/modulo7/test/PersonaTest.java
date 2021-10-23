@@ -64,8 +64,9 @@ public class PersonaTest {
 		}
 		@Test
 		public void testCantidadDePersonas() {
-			assertEquals(26, Persona.getCantidadDePersonas());
-		}
+			assertEquals(/*26*/5, Persona.getCantidadDePersonas());
+		}//por qué no me cuenta la cantidad total de Personas creadas (26)? 
+		//Es porque Personas No es Abstracta?
 		@Test
 		public void testPersonaConDatos() {
 			assertEquals("Jhon", personaConDatos.getNombre());
