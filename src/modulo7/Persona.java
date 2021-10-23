@@ -50,11 +50,10 @@ public class Persona {
 	
 	public int hashCode() {
 		return Objects.hash(apellido, nombre);
-	}
-	
-	/*	public int hashCode() {
+	/*
 	return nombre.hashCode()+apellido.hashCode();
-	}*/
+	*/
+	}
 	
 	public String toString(){
 		StringBuilder sb = new StringBuilder("\nNombre = ");

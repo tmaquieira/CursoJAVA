@@ -8,6 +8,9 @@ public class Profesor extends Persona {
 	public Profesor(){ 
 		super();
 	}
+	public Profesor(String unIosfa){
+		iosfa = unIosfa;
+	}
 	public Profesor(String unNombre, String unApellido, String unIosfa){
 		super(unNombre, unApellido);
 		iosfa = unIosfa;

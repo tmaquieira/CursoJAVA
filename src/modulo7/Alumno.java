@@ -9,6 +9,9 @@ public class Alumno extends Persona {
 	public Alumno(){ 
 		super(); 
 	}
+	public Alumno(int unLegajo){ 
+		legajo = unLegajo;
+	}
 	public Alumno (String unNombre, String unApellido, int unLegajo){
 		super(unNombre, unApellido);
 		legajo = unLegajo;
