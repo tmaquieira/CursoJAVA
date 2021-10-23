@@ -6,10 +6,10 @@ public class Ejercicio9 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Ingrese su jugador 1...");
+		System.out.println("Ingrese su jugada, jugador 1...");
 		Scanner sc= new Scanner(System.in);
 		int jugador1 = sc.nextInt();
-		System.out.println("Ingrese su jugador 2...");
+		System.out.println("Ingrese su jugada, jugador 2...");
 		int jugador2 = sc.nextInt();
 		
 		if (jugador1 == 0 && jugador2 == 2) {
