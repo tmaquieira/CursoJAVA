@@ -117,30 +117,3 @@ public class PersonaTest {
 			assertTrue(personaNN.equals(nuevoAlumno));
 		}
 }
-//		@Test
-//		public void testAcreditarCuentaVacia() {
-//			cajaDeAhorroVacia.acreditar(5);
-//			assertEquals(5, cajaDeAhorroVacia.getSaldo(),0.01);
-//		}
-//		@Test
-//		public void testAcreditarCuentaLlena() {
-//			cuentaCorrienteLlena.acreditar(5);
-//			assertEquals(105, cuentaCorrienteLlena.getSaldo(),0.01);
-//		}
-//		@Test
-//		public void testDebitarCuentaLlena() {
-//			cuentaCorrienteLlena.debitar(20);
-//			assertEquals(80, cuentaCorrienteLlena.getSaldo(),0.01);
-//		}
-//		@Test
-//		public void testDebitarCuentaCorrienteLlena_fallido() {
-//			cuentaCorrienteLlena.debitar(2700);
-//			assertEquals(100, cuentaCorrienteLlena.getSaldo(),0.01);
-//		}
-//		@Test
-//		public void testDebitarCuentaCorrienteLlena_sobrepaseElSaldo() {
-//			cuentaCorrienteLlena.debitar(300);
-//			assertEquals(-200, cuentaCorrienteLlena.getSaldo(),0.01);
-//		}
-
-	
