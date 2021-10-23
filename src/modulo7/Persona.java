@@ -28,16 +28,26 @@ public class Persona {
 	public void setNombre (String unNombre){
 		nombre = unNombre;
 	}	   
-		
 	//métodos	    
-	public boolean equals(Object unaPersona){
-		return false;
+	public boolean equals(Object obj){
+		boolean bln = false; 
+		if (obj instanceof Persona) {
+			//downCast 
+			Persona personita = (Persona) obj;	
+			bln = nombre == personita.getNombre() && apellido == personita.getApellido();
+		}
+		return bln;	
 	}
+	
 	public int hashCode(){
 		return this.hashCode();
 	}
+	
 	public String toString(){
-		StringBuilder sb = new StringBuilder();
-		return sb.toString();	
+		StringBuilder sb = new StringBuilder("\nnombre = ");
+		sb.append(nombre);
+		sb.append(", apellido = ");
+		sb.append(apellido);
+		return sb.toString();
 	}
 }

@@ -13,15 +13,13 @@ public class CajaDeAhorro extends Cuenta {
 		super(pNum, pSaldo);
 		interes = pInteres;
 	}
-
 	//getters y setters
 	public float getInteres() {
 		return interes;
 	}
 	public void setInteres(float interes) {
 		this.interes = interes;
-	}
-	
+	}	
 	//métodos heredados
 	@Override
 	public void acreditar(float pMonto) {
@@ -45,11 +43,9 @@ public class CajaDeAhorro extends Cuenta {
 	//o simplemente:
 	//return super.equals(obj) && obj instanceof CajaDeAhorro && ((CajaDeAhorro)obj).getInteres()==interes; 
 	}
-	
 	public int hashCode(){
 		return super.hashCode() + (int) interes;
-	}
-	
+	}	
 	public String toString(){
 		StringBuilder sb = new StringBuilder(super.toString());
 		sb.append(", interes=");

@@ -1,4 +1,4 @@
-package util;
+package modulo6.util;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

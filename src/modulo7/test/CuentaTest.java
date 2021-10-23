@@ -27,6 +27,7 @@ public class CuentaTest {
 		lstCuentas.add(new CajaDeAhorro(11,200,2.5f));
 		lstCuentas.add(new CajaDeAhorro(12,300,4.5f));
 		lstCuentas.add(new CajaDeAhorro(13,50,5.5f));
+		lstCuentas.add(new CajaDeAhorro(14,150,1.5f));
 		lstCuentas.add(new CajaDeAhorro());
 		lstCuentas.add(new CuentaCorriente(60,600,6000));
 		lstCuentas.add(new CuentaCorriente(70,700,7000));
@@ -40,6 +41,7 @@ public class CuentaTest {
 		setCuentas.add(new CajaDeAhorro(11,200,2.5f));
 		setCuentas.add(new CajaDeAhorro(12,300,4.5f));
 		setCuentas.add(new CajaDeAhorro(13,50,5.5f));
+		lstCuentas.add(new CajaDeAhorro(14,150,1.5f));
 		setCuentas.add(new CajaDeAhorro());
 		setCuentas.add(new CuentaCorriente(60,600,6000));
 		setCuentas.add(new CuentaCorriente(70,700,7000));
@@ -54,7 +56,12 @@ public class CuentaTest {
 		cuentaCorrienteLlena = null;
 		lstCuentas = null;
 		setCuentas = null;
+		Cuenta.limpiarCantidadDeCuentas();
 	}
+	@Test
+	public void testCantidadDeObjetos() {
+		assertEquals(26, Cuenta.getCantidadDeCuentas());
+	}	
 	@Test
 	public void testEqualsEnSet_add_true() {
 		cajaDeAhorroVacia.setNumero(12);

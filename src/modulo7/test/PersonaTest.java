@@ -1,21 +1,64 @@
-package modulo7;
-
+package modulo7.test;
 import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import javax.swing.plaf.synth.SynthSeparatorUI;
-import modulo7.Persona;
-import modulo7.Alumno;
-import modulo7.Profesor;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import modulo7.Alumno;
+import modulo7.Persona;
+import modulo7.Profesor;
 
 public class PersonaTest {
 
-	List<Persona> listaPersonas;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}
+	
+	
+	
+	
+	
+	/*List<Persona> listaPersonas;
 	Persona persona1;
 	Alumno alumno1;
 	Profesor profesor1;
@@ -53,6 +96,4 @@ public class PersonaTest {
 	@Test
 	public void testToString() {
 		fail("Not yet implemented");
-	}
-
-}
+	}*/

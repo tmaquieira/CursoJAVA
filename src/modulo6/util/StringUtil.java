@@ -1,4 +1,4 @@
-package util;
+package modulo6.util;
 
 /*Realizar una clase StringUtil dentro de un paquete con el mismo nombre, en
 ella realizar los siguientes métodos, se puede utilizar String.charAt,

@@ -1,11 +1,12 @@
-package util.test;
+package modulo6.util.test;
 import static org.junit.jupiter.api.Assertions.*; 
 import java.util.Calendar;
 import java.util.Date;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import util.DateUtil;
+
+import modulo6.util.DateUtil;
 
 class DateUtilTest {
 	//lote de prueba 
