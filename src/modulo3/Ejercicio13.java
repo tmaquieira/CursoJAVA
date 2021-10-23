@@ -6,46 +6,46 @@ public class Ejercicio13 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Ingrese mes en minúsculas...");
+		System.out.println("Ingrese mes en números...");
 		Scanner sc= new Scanner(System.in);
-		String nombreMes = sc.next();
+		int numeroMes = sc.nextInt();
 		
-	switch (nombreMes){
-	case "enero":
-		System.out.println(nombreMes+" tiene 31 días.");
+	switch (numeroMes){
+	case 1:
+		System.out.println("Enero tiene 31 días.");
 	break;
-	case "febrero":
-		System.out.println(nombreMes+" tiene 28 días.");
+	case 2:
+		System.out.println("Febrero tiene 28 días.");
 	break;
-	case "marzo":
-		System.out.println(nombreMes+" tiene 31 días.");
+	case 3:
+		System.out.println("Marzo tiene 31 días.");
 	break;
-	case "abril":
-		System.out.println(nombreMes+" tiene 30 días.");
+	case 4:
+		System.out.println("Abril tiene 30 días.");
 		break;
-	case "mayo":
-		System.out.println(nombreMes+" tiene 31 días.");
+	case 5:
+		System.out.println("Mayo tiene 31 días.");
 		break;
-	case "junio":
-		System.out.println(nombreMes+" tiene 30 días.");
+	case 6:
+		System.out.println("Junio tiene 30 días.");
 		break;
-	case "julio":
-		System.out.println(nombreMes+" tiene 31 días.");
+	case 7:
+		System.out.println("Julio tiene 31 días.");
 		break;
-	case "agosto":
-		System.out.println(nombreMes+" tiene 31 días.");
+	case 8:
+		System.out.println("Agosto tiene 31 días.");
 		break;
-	case "septiembre":
-		System.out.println(nombreMes+" tiene 30 días.");
+	case 9:
+		System.out.println("Septiembre tiene 30 días.");
 		break;
-	case "octubre":
-		System.out.println(nombreMes+" tiene 31 días.");
+	case 10:
+		System.out.println("Octubre tiene 31 días.");
 		break;
-	case "noviembre":
-		System.out.println(nombreMes+" tiene 30 días.");
+	case 11:
+		System.out.println("Noviembre tiene 30 días.");
 		break;
-	case "diciembre":
-		System.out.println(nombreMes+" tiene 31 días.");
+	case 12:
+		System.out.println("Diciembre tiene 31 días.");
 		break;	
 		} 
 	}
