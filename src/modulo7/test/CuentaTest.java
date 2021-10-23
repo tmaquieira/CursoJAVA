@@ -3,7 +3,9 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import modulo7.CajaDeAhorro;
 import modulo7.Cuenta;
+import modulo7.CuentaCorriente;
 
 public class CuentaTest {
 	//lote de pruebas
@@ -11,8 +13,8 @@ public class CuentaTest {
 	Cuenta cuentaLlena;
 	@Before
 	public void setUp() throws Exception {
-		cuentaVacia = new Cuenta();
-		cuentaLlena = new Cuenta(10,100);
+		cuentaVacia = new CajaDeAhorro();
+		cuentaLlena = new CuentaCorriente(10,100, 2500f);
 	}
 	@After
 	public void tearDown() throws Exception {

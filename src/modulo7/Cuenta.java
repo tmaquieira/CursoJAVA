@@ -1,9 +1,9 @@
 package modulo7;
 
-public class Cuenta {
+public abstract class Cuenta {
 	//atributos
 	private int numero;
-	private float saldo;
+	protected float saldo; //atributo visible para las clases que heredan de Cuenta
 	
 	//constructores
 	//primer método que se ejecuta al crear un objeto
@@ -27,13 +27,9 @@ public class Cuenta {
 	}
 	
 	//métodos de negocio
-	public void acreditar(float pMonto) {
-		saldo += pMonto;
-	}
-	public void debitar(float pMonto) {
-		saldo -= pMonto;
-	}
-
+	//métodos abstractos: no están implementados. obliga a las clases que heredan a implementar sus propias normas
+	public abstract void acreditar(float pMonto);
 	
+	public abstract void debitar(float pMonto);
 
 }
