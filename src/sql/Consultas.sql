@@ -1,1 +1,1 @@
-select * from alumnos
+select * from empleados
