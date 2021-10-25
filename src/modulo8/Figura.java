@@ -3,7 +3,7 @@ package modulo8;
 import java.util.Objects;
 
 public abstract class Figura {
-	protected float maximaSuperficie; 
+	protected static float maximaSuperficie; 
 	private String nombre;
 	
 	public Figura() {}
@@ -15,7 +15,7 @@ public abstract class Figura {
 		maximaSuperficie = unaMaximaSuperficie;
 		nombre = unNombre;
 	}
-	public float getMaximaSuperficie(){
+	public static float getMaximaSuperficie(){
 		return maximaSuperficie;
 	}
 	public String getNombre(){
